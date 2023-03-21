@@ -1,0 +1,21 @@
+{
+  "name": "valop",
+  "version": "1.0.0",
+  "description": "オプションと引数によって好きな値を作成してくれます",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fix": "prettier --write . && eslint --fix .",
+    "lint": "prettier --check . && eslint ."
+  },
+  "keywords": [
+    "valop"
+  ],
+  "author": "toke",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.6"
+  }
+}
