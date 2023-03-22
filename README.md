@@ -41,11 +41,10 @@ npm install -g valueop
 
 ❯ valueop -r 1..5
 [ 1, 2, 3, 4, 5 ]
-
 ❯ valueop -r a..e 
 [ 'a', 'b', 'c', 'd', 'e' ]
 
-# -0オプションも引数はスペース区切りで渡してください
+# -oオプションも引数はスペース区切りで渡してください
 ❯ valueop -o neko inu salu 
 { key1: 'neko', key2: 'inu', key3: 'salu' }
 ```
