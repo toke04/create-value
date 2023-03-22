@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+
 const argv = require("minimist")(process.argv.slice(2));
 
 if (argv.a) {
@@ -11,14 +12,12 @@ if (argv.a) {
 } else if (argv.o) {
   const array = [argv.o].concat(argv._);
   let returnedObject = {};
-
   for (let index = 0; index < array.length; index++) {
     returnedObject["key" + (index + 1)] = array[index];
   }
-
   console.log(returnedObject);
 } else {
-  const dolphinBeforeStdin = `
+  const description = `
 オプションを指定してご利用下さい。
 [例]
 -a : スペース区切りで値を複数渡すと、配列が出来ます
@@ -37,7 +36,7 @@ if (argv.a) {
 ❯ valueop -o neko inu salu
 { key1: 'neko', key2: 'inu', key3: 'salu' }
 `;
-  console.log(dolphinBeforeStdin);
+  console.log(description);
 }
 
 function rangeToArray(argv) {
