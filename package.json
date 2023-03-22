@@ -1,6 +1,6 @@
 {
   "name": "valueop",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "オプションと引数によって好きな「配列 or オブジェクト(言語によってはハッシュまたは辞書とも言う)」を作成してくれます",
   "main": "index.js",
   "bin": {
