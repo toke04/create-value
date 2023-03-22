@@ -21,19 +21,19 @@ if (argv.a) {
 オプションを指定してご利用下さい。
 [例]
 -a : スペース区切りで値を複数渡すと、配列が出来ます
-❯ valueop -a neko inu salu
+❯ cv -a neko inu salu
 [ 'neko', 'inu', 'salu' ]
 
 -r : 1. [1以上の数値]..[2以上の値]を渡す
    : 2. [a以上の値]..[z以下の値]を渡す
-❯ valueop -r 1..5         
+❯ cv -r 1..5         
 [ 1, 2, 3, 4, 5 ]
 
-❯ valueop -r a..e
+❯ cv -r a..e
 [ 'a', 'b', 'c', 'd', 'e' ]
 
 -o : スペース区切りで値を複数渡すと、オブジェクトが作成されます
-❯ valueop -o neko inu salu
+❯ cv -o neko inu salu
 { key1: 'neko', key2: 'inu', key3: 'salu' }
 `;
   console.log(description);
