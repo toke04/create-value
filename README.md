@@ -28,13 +28,13 @@
 **ご利用の際は、`-a -r -o`どちらかのオプションを指定してご利用下さい。**
 ```
 # インストール
-npm install -g valueop
+npm install -g create-value
 npm install -g minimist # 依存関係のため必要
 
 # [使用例]
 
 # -aオプションの引数はスペース区切りで渡してください
-❯ valueop -a neko inu salu 
+❯ cv -a neko inu salu 
 [ 'neko', 'inu', 'salu' ]
 
 # -rオプションは
@@ -42,13 +42,13 @@ npm install -g minimist # 依存関係のため必要
 # 2. [a以上の値]..[z以下の値]を渡す
 # でお願い致します。
 
-❯ valueop -r 1..5
+❯ cv -r 1..5
 [ 1, 2, 3, 4, 5 ]
-❯ valueop -r a..e 
+❯ cv -r a..e 
 [ 'a', 'b', 'c', 'd', 'e' ]
 
 # -oオプションも引数はスペース区切りで渡してください
-❯ valueop -o neko inu salu 
+❯ cv -o neko inu salu 
 { key1: 'neko', key2: 'inu', key3: 'salu' }
 ```
 
