@@ -11,7 +11,7 @@ if (argv.a) {
   console.log(convertedArray);
 } else if (argv.o) {
   const array = [argv.o].concat(argv._);
-  let returnedObject = {};
+  const returnedObject = {};
   for (let index = 0; index < array.length; index++) {
     returnedObject["key" + (index + 1)] = array[index];
   }
