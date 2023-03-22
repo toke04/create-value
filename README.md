@@ -27,6 +27,7 @@
 ```
 # インストール
 npm install -g valueop
+npm install -g minimist # 依存関係のため必要
 
 # [使用例]
 

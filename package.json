@@ -11,6 +11,10 @@
     "fix": "prettier --write . && eslint --fix .",
     "lint": "prettier --check . && eslint ."
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syo-tokeshi/valop.git"
+  },
   "keywords": [
     "valueop"
   ],
