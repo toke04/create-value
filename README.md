@@ -1,14 +1,14 @@
 # 使用イメージ
 
+![create-value](https://user-images.githubusercontent.com/54713809/226917927-e4e83cba-8724-4aed-9c4f-4050046aa797.gif)
+
+<img width="499" alt="スクリーンショット 2023-03-22 22 19 45" src="https://user-images.githubusercontent.com/54713809/226916989-d8679464-e92c-477f-8791-247a674e26fe.png">
+
 オプション(-a or -r or -o) + rubyっぽく引数を渡すと、
 - 配列  
 - オブジェクト(rubyではハッシュとしても使えます)  
 
 のデータが手に入ります😊
-
-<img width="486" alt="スクリーンショット 2023-03-22 18 37 25" src="https://user-images.githubusercontent.com/54713809/226863033-69e30c31-cf47-44a2-93bc-dfda8f46ec2f.png">  
-
-![demo](https://user-images.githubusercontent.com/54713809/226875881-d6e7350b-1b05-4835-8177-83d618ed7fe3.gif)  
 
 # 概要
 
