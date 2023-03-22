@@ -6,7 +6,9 @@
 
 のデータが手に入ります😊
 
-<img width="486" alt="スクリーンショット 2023-03-22 18 37 25" src="https://user-images.githubusercontent.com/54713809/226863033-69e30c31-cf47-44a2-93bc-dfda8f46ec2f.png">
+<img width="486" alt="スクリーンショット 2023-03-22 18 37 25" src="https://user-images.githubusercontent.com/54713809/226863033-69e30c31-cf47-44a2-93bc-dfda8f46ec2f.png">  
+
+![demo](https://user-images.githubusercontent.com/54713809/226875881-d6e7350b-1b05-4835-8177-83d618ed7fe3.gif)  
 
 # 概要
 
