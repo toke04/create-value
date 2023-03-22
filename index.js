@@ -1,5 +1,4 @@
-import minimist from "minimist";
-const argv = minimist(process.argv.slice(2));
+const argv = require("minimist")(process.argv.slice(2));
 
 if (argv.a) {
   const array = [argv.a].concat(argv._);
