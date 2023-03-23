@@ -1,20 +1,12 @@
-# 使用イメージ
+# demo
 
 ![create-value](https://user-images.githubusercontent.com/54713809/226917927-e4e83cba-8724-4aed-9c4f-4050046aa797.gif)
 
 <img width="635" alt="スクリーンショット 2023-03-23 15 05 57" src="https://user-images.githubusercontent.com/54713809/227117882-c9f9fb7e-ee5b-455b-8ca0-5b1f8a9fff87.png">
 
-オプション(-a or -r or -o) + rubyっぽく引数を渡すと、
-- 配列  
-- オブジェクト(rubyではハッシュとしても使えます)  
+## create-value
 
-のデータが手に入ります😊
-
-また、オプション無しで実行しても、汎用データがすぐ手に入ります。
-
-# 概要
-
-本プログラムは手軽に  
+本プログラムを使うと、手軽に  
 ・配列  
 ・オブジェクト(rubyではハッシュとしても使えます)  
 を作成する事が出来ます。  
@@ -23,20 +15,21 @@
 
 その際にご使用ください。    
 
-オプションを利用する際は、`-a -r -o -h`を指定してご利用下さい。
+また、オプションを利用する際は、`-a -r -o -h`のみを指定してご利用下さい。
 
-# ご利用方法
+## Installation
+
+npmを使用してインストールします。
+```
+npm install -g create-value
+npm install -g minimist # 依存関係のため必要
+```
+
+## Usage
 
 **ご利用の際は、オプションを付ける場合は、`-a -r -o -h`どちらかを指定してご利用下さい。**
 ```
-# インストール
-npm install -g create-value
-npm install -g minimist # 依存関係のため必要
-
-# [使用例]
-
 # オプションなしで使用すると、よく使うであろうデータが表示されます。
-
 ❯ cv index.js
 [ 'hoge', 'fuga', 'foo', 'piyo', 'bar' ] 
 
