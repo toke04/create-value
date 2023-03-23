@@ -18,7 +18,7 @@ if (argv.a) {
   console.log(returnedObject);
 } else if (argv.h) {
   const description = `
-オプションを指定してご利用下さい。
+オプションを指定する際は、以下のようにご利用下さい。
 [例]
 -a : スペース区切りで値を複数渡すと、配列が出来ます
 ❯ cv -a neko inu salu
