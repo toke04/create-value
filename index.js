@@ -16,7 +16,7 @@ if (argv.a) {
     returnedObject["key" + (index + 1)] = array[index];
   }
   console.log(returnedObject);
-} else {
+} else if (argv.h) {
   const description = `
 オプションを指定してご利用下さい。
 [例]
@@ -37,6 +37,24 @@ if (argv.a) {
 { key1: 'neko', key2: 'inu', key3: 'salu' }
 `;
   console.log(description);
+} else {
+  console.log(["hoge", "fuga", "foo", "piyo", "bar"], "\n");
+  console.log([1, 2, 3, 4, 5], "\n");
+  console.log(
+    [
+      [1, 2],
+      [3, 4],
+      [5, 6],
+    ],
+    "\n"
+  );
+  console.log({ name: "taro", age: 25, hobby: "game" }, "\n");
+  console.log([{ name: "taro" }, { name: "hana" }, { name: "jiro" }], "\n");
+  console.log([
+    { name: "taro", age: 25 },
+    { name: "hana", age: 18 },
+    { name: "jiro", age: 42 },
+  ]);
 }
 
 function rangeToArray(argv) {
