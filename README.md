@@ -2,13 +2,15 @@
 
 ![create-value](https://user-images.githubusercontent.com/54713809/226917927-e4e83cba-8724-4aed-9c4f-4050046aa797.gif)
 
-<img width="499" alt="スクリーンショット 2023-03-22 22 19 45" src="https://user-images.githubusercontent.com/54713809/226916989-d8679464-e92c-477f-8791-247a674e26fe.png">
+<img width="635" alt="スクリーンショット 2023-03-23 15 05 57" src="https://user-images.githubusercontent.com/54713809/227117882-c9f9fb7e-ee5b-455b-8ca0-5b1f8a9fff87.png">
 
 オプション(-a or -r or -o) + rubyっぽく引数を渡すと、
 - 配列  
 - オブジェクト(rubyではハッシュとしても使えます)  
 
 のデータが手に入ります😊
+
+また、オプション無しで実行しても、汎用データがすぐ手に入ります。
 
 # 概要
 
@@ -21,11 +23,11 @@
 
 その際にご使用ください。    
 
-`-a -r -o`どちらかのオプションを指定してご利用下さい。
+オプションを利用する際は、`-a -r -o -h`を指定してご利用下さい。
 
 # ご利用方法
 
-**ご利用の際は、`-a -r -o`どちらかのオプションを指定してご利用下さい。**
+**ご利用の際は、オプションを付ける場合は、`-a -r -o -h`どちらかを指定してご利用下さい。**
 ```
 # インストール
 npm install -g create-value
@@ -33,11 +35,30 @@ npm install -g minimist # 依存関係のため必要
 
 # [使用例]
 
-# -aオプションの引数はスペース区切りで渡してください
+# オプションなしで使用すると、よく使うであろうデータが表示されます。
+
+❯ cv index.js
+[ 'hoge', 'fuga', 'foo', 'piyo', 'bar' ] 
+
+[ 1, 2, 3, 4, 5 ] 
+
+[ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ] 
+
+{ name: 'taro', age: 25, hobby: 'game' } 
+
+[ { name: 'taro' }, { name: 'hana' }, { name: 'jiro' } ] 
+
+[
+  { name: 'taro', age: 25 },
+  { name: 'hana', age: 18 },
+  { name: 'jiro', age: 42 }
+]
+
+# -a : 配列を作成します。オプションの引数はスペース区切りで渡してください
 ❯ cv -a neko inu salu 
 [ 'neko', 'inu', 'salu' ]
 
-# -rオプションは
+# -r : 範囲から配列を作成します。オプションは
 # 1. [1以上の数値]..[2以上の値]を渡す
 # 2. [a以上の値]..[z以下の値]を渡す
 # でお願い致します。
@@ -47,11 +68,7 @@ npm install -g minimist # 依存関係のため必要
 ❯ cv -r a..e 
 [ 'a', 'b', 'c', 'd', 'e' ]
 
-# -oオプションも引数はスペース区切りで渡してください
+# -o : オブジェクトを作成します。引数はスペース区切りで渡してください
 ❯ cv -o neko inu salu 
 { key1: 'neko', key2: 'inu', key3: 'salu' }
 ```
-
-**-a or -r: 単純な配列を作成します。**
-
-**-o : オブジェクト(rubyではハッシュとしても使えます)を作成します**
