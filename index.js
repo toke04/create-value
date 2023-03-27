@@ -57,7 +57,7 @@ const main = () => {
       { name: "jiro", age: 42 },
     ]);
   }
-}
+};
 
 const rangeToArray = (argv) => {
   const returnedArray = [];
@@ -75,6 +75,6 @@ const rangeToArray = (argv) => {
     }
   }
   return returnedArray;
-}
+};
 
 main();
