@@ -18,7 +18,13 @@ const main = () => {
     }
     console.log(returnedObject);
   } else if (argv.h) {
-    const description = `
+    console.log(description);
+  } else {
+    displaySample();
+  }
+};
+
+const description = `
     オプションを指定する際は、以下のようにご利用下さい。
     [例]
     -a : スペース区切りで値を複数渡すと、配列が出来ます
@@ -37,26 +43,25 @@ const main = () => {
     ❯ cv -o neko inu salu
     { key1: 'neko', key2: 'inu', key3: 'salu' }
     `;
-    console.log(description);
-  } else {
-    console.log(["hoge", "fuga", "foo", "piyo", "bar"], "\n");
-    console.log([1, 2, 3, 4, 5], "\n");
-    console.log(
-      [
-        [1, 2],
-        [3, 4],
-        [5, 6],
-      ],
-      "\n"
-    );
-    console.log({ name: "taro", age: 25, hobby: "game" }, "\n");
-    console.log([{ name: "taro" }, { name: "hana" }, { name: "jiro" }], "\n");
-    console.log([
-      { name: "taro", age: 25 },
-      { name: "hana", age: 18 },
-      { name: "jiro", age: 42 },
-    ]);
-  }
+
+const displaySample = () => {
+  console.log(["hoge", "fuga", "foo", "piyo", "bar"], "\n");
+  console.log([1, 2, 3, 4, 5], "\n");
+  console.log(
+    [
+      [1, 2],
+      [3, 4],
+      [5, 6],
+    ],
+    "\n"
+  );
+  console.log({ name: "taro", age: 25, hobby: "game" }, "\n");
+  console.log([{ name: "taro" }, { name: "hana" }, { name: "jiro" }], "\n");
+  console.log([
+    { name: "taro", age: 25 },
+    { name: "hana", age: 18 },
+    { name: "jiro", age: 42 },
+  ]);
 };
 
 const rangeToArray = (argv) => {
