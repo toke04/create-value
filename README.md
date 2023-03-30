@@ -22,7 +22,6 @@
 npmを使用してインストールします。
 ```
 npm install -g create-value
-npm install -g minimist # 依存関係のため必要
 ```
 
 ## Usage
